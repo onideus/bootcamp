@@ -3,6 +3,7 @@ package com.onideus;
 import com.onideus.eleven.four.ElevenFourMain;
 import com.onideus.eleven.three.ElevenThreeMain;
 import com.onideus.eleven.two.ElevenTwoMain;
+import com.onideus.twelve.one.TwelveOneMain;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,7 +18,8 @@ public class Main {
             System.out.println(String.format("0 - Exit Program\n" +
                     "1 - %s\n" +
                     "2 - %s\n" +
-                    "3 - %s", "Assignment Eleven-Two", "Assignment Eleven-Three", "Assignment Eleven-Four"));
+                    "3 - %s\n" +
+                    "4 - %s", "Project 11-2", "Project 11-3", "Project 11-4", "Project 12-1"));
 
             input = reader.readLine();
 
@@ -33,6 +35,10 @@ public class Main {
                 case "3":
                     ElevenFourMain elevenFourMain = new ElevenFourMain();
                     elevenFourMain.run();
+                    break;
+                case "4":
+                    TwelveOneMain twelveOneMain = new TwelveOneMain();
+                    twelveOneMain.run();
                     break;
                 case "0":
                     break;
